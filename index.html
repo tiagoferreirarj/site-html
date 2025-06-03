@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tiago Ferreira Produções Musicais</title>
-  <meta name="description" content="Site pessoal de Tiago Ferreira, tecladista, produtor musical e apaixonado por música.">
+  <title>Tiago Ferreira em um Home Studio</title>
+  <meta name="description" content="Site pessoal de Tiago Ferreira, tecladista, produtor musical e apaixonado por música, direto do seu home studio.">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
-      background-color: #0e0e0e;
-      color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0 20px;
+      padding: 0 5vw;
       line-height: 1.6;
+      transition: background-color 2s ease, color 2s ease;
     }
+
     header {
       text-align: center;
       padding: 40px 20px;
     }
+
     header h1 {
       color: #00ccff;
       font-size: 2.5em;
       animation: fadeIn 1.5s ease-in-out;
     }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     img {
       max-width: 280px;
       border-radius: 12px;
@@ -35,63 +38,114 @@
       display: block;
       box-shadow: 0 0 10px rgba(255,255,255,0.2);
     }
-    section {
-      margin-bottom: 40px;
+
+    main {
       text-align: center;
     }
+
+    section {
+      margin-bottom: 40px;
+    }
+
     h2 {
       color: #00ccff;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #00ccff;
       padding-bottom: 5px;
     }
+
     footer {
       text-align: center;
       font-size: 14px;
       color: #aaa;
       margin: 40px 0 20px;
     }
+
     a {
       color: #00ccff;
       text-decoration: underline;
     }
+
+    #relogio-misterioso {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 20px;
+      font-family: monospace;
+      color: #ff4444;
+    }
   </style>
 </head>
-<body>
+<body style="background-color: #000; color: #fff;">
 
   <header>
-    <img src="Eu-tocando.jpg" alt="Tiago Ferreira tocando">
+    <img src="Eu-tocando.jpg" alt="Tiago Ferreira tocando teclado no estúdio">
     <h1>Tiago Ferreira</h1>
     <p>Tecladista, adorador, produtor musical e apaixonado por som. Histórias contadas com notas, muito amor e emoção.</p>
   </header>
 
-  <section>
-    <h2>Minha História</h2>
-    <p>Desde pequeno envolvido com música, cresci em meio a bandas marciais, igrejas e ensaios. Aprendi teclado sozinho, usava fita cassete pra gravar, e sempre dei meu jeito de fazer som. Já toquei em igrejas, ministérios, eventos, e sigo vivendo essa paixão até hoje.</p>
-  </section>
+  <main>
+    <section>
+      <h2>Minha História</h2>
+      <p>Desde pequeno envolvido com música, cresci em meio a bandas marciais, igrejas e ensaios. Aprendi teclado sozinho, usava fita cassete pra gravar, e sempre dei meu jeito de fazer som. Já toquei em igrejas, ministérios, eventos, e sigo vivendo essa paixão até hoje.</p>
+    </section>
 
-  <section>
-    <h2>Experiência Musical</h2>
-    <p>Sou tecladista com anos de estrada. Participei de bandas marciais, fanfarras, ministérios de louvor e vários grupos. Toco de ouvido, crio timbres personalizados, entendo de arranjo e produzo minhas próprias músicas.</p>
-  </section>
+    <section>
+      <h2>Experiência Musical</h2>
+      <p>Sou tecladista com anos de estrada. Participei de bandas marciais, fanfarras, ministérios de louvor e vários grupos. Toco de ouvido, crio timbres personalizados, entendo de arranjo e produzo minhas próprias músicas.</p>
+    </section>
 
-  <section>
-    <h2>Instrumentos e Equipamentos</h2>
-    <p>Uso teclados e sintetizadores com camadas, pads e timbres personalizados. Trabalho com DAWs, plugins VST, faço gravações, mixagens e também masterizações.</p>
-  </section>
+    <section>
+      <h2>Instrumentos e Equipamentos</h2>
+      <p>Uso teclados e sintetizadores com camadas, pads e timbres personalizados. Trabalho com DAWs, plugins VST, faço gravações, mixagens e também masterizações.</p>
+    </section>
 
-  <section>
-    <h2>Produções e Gravações</h2>
-    <p>Já produzi bases, faixas instrumentais, intros e versões exclusivas pra bandas e igrejas. Sempre no feeling, com criatividade, técnica e amor pela música.</p>
-  </section>
+    <section>
+      <h2>Produções e Gravações</h2>
+      <p>Já produzi bases, faixas instrumentais, intros e versões exclusivas pra bandas e igrejas. Sempre no feeling, com criatividade, técnica e amor pela música.</p>
+    </section>
 
-  <section>
-    <h2>Contato</h2>
-    <p>Ainda sem redes sociais por aqui, mas em breve coloco formas de contato direto.</p>
-  </section>
+    <address>
+      <h2>Contato</h2>
+      <p>Ainda sem redes sociais por aqui, mas em breve coloco formas de contato direto.</p>
+    </address>
+
+    <div id="relogio-misterioso"></div>
+  </main>
 
   <footer>
-    <p>© Tiago Ferreira Produções Musicais 2025 - Todos os direitos reservados</p>
+    <p>© Tiago Ferreira em um Home Studio 2025 - Todos os direitos reservados</p>
   </footer>
 
+  <script>
+    const coresPorHora = [
+      "#0a0a0a", "#111111", "#1a1a1a", "#222222", "#2a2a2a", "#333333",
+      "#3b3b3b", "#444444", "#4c4c4c", "#555555", "#5f5f5f", "#6a6a6a",
+      "#747474", "#6a6a6a", "#5f5f5f", "#555555", "#4c4c4c", "#444444",
+      "#3b3b3b", "#2a2a2a", "#1a1a1a", "#111111", "#0e0e0e", "#000000"
+    ];
+
+    function aplicarCorPorHora() {
+      const hora = new Date().getHours();
+      document.body.style.backgroundColor = coresPorHora[hora];
+    }
+
+    aplicarCorPorHora();
+
+    function atualizarRelogio() {
+      const agora = new Date();
+      const meiaNoite = new Date();
+      meiaNoite.setHours(24, 0, 0, 0);
+
+      const diff = meiaNoite - agora;
+      const horas = Math.floor(diff / 1000 / 60 / 60);
+      const minutos = Math.floor((diff / 1000 / 60) % 60);
+      const segundos = Math.floor((diff / 1000) % 60);
+
+      const formato = `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+      document.getElementById("relogio-misterioso").textContent = "Contagem regressiva: " + formato;
+    }
+
+    setInterval(atualizarRelogio, 1000);
+    atualizarRelogio();
+  </script>
 </body>
 </html>
